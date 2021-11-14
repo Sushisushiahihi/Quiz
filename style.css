@@ -1,0 +1,270 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mbt-18{
+    margin-bottom: 18px;
+}
+
+
+
+body {
+    width: 700px;
+    margin: auto;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #222222;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+
+
+/*Introduction*/
+header{
+    display: flex;
+    font-family: 'Helvetica', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border: #ccc thick 1px;
+}
+.course{
+   
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+}
+
+
+
+
+.item{
+    display:inline-block;
+    background-color: #ffee00;
+   border-radius: 100%;
+   width: 50px;
+   line-height: 50px;
+   text-align: center;
+    font-weight: bold;
+    transform: rotate(-30deg);
+
+}
+.image{
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 425px;
+    position: relative;
+}
+.image h1{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    font-family: 'Pangolin', 'Trebuchet MS', 'cursive';
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    
+    
+}
+.author{
+    text-align: center;
+    font-size: 14px;
+}
+.footer{
+    background-color: #f1f1f1;
+    text-align: center;
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 18px;
+    border: #dcdcdc solid 1px;
+    margin-top: 36px;
+    
+
+}
+.content-footer{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.btn-start{
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 18px;
+}
+
+.btn-start:hover{
+    cursor: pointer;
+    background-color: #0d8bf2;
+}
+
+/*Attempt-quiz*/
+h3{
+    margin-top: 30px;
+}
+p{
+    margin: 30px 0;
+}
+input[type='radio']{
+    margin-right: 15px;
+   
+}
+ label{
+    display: block;
+    margin-bottom: 1px;
+    padding: 15px;
+    background-color: #f1f1f1;
+ 
+    
+    
+    
+    
+}
+label :hover {
+    background-color: #ddd;
+}
+
+section .contain-ques label:hover{
+    background-color: #ddd;
+}
+
+
+
+.contain-submit{
+    background-color: #f1f1f1;
+    text-align: center;
+    min-height: 100px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+input[type='submit']{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 18px;
+    border: none;
+
+}
+input[type='submit']:hover{
+    background-color: #46a049;
+    cursor: pointer;
+}
+
+
+ label.selected {
+      background-color: #ddd;
+  }
+
+ 
+
+    
+    
+/*Review-quiz*/ 
+
+.result{
+    background-color: #f1f1f1;
+    text-align: center;
+    min-height: 330px;
+    position: relative;
+    margin-bottom: 36px;
+    border: #dcdcdc solid 1px;
+    margin-top: 36px;
+    
+}
+.contain-result{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+
+}
+.result-size{
+    font-size: 40px;
+    font-weight: 500;
+}
+.percent{
+    font-weight: 600
+}
+.number-choice{
+    font-size: 24px;
+}
+.btn-try{
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 18px;
+}
+
+.btn-try:hover{
+    cursor: pointer;
+    background-color: #0d8bf2;
+}
+
+/*responsive*/
+@media only screen and (max-width: 700px) {
+    body{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title{
+        display: none;
+    }
+   
+    
+}
+
+
+.box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.open {
+    display: flex;
+}
+.box-contain {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.heading-box {
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-confirm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 130px;
+}
+.button {
+    padding: 10px 40px;
+    cursor: pointer;
+}
